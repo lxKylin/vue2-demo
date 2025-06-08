@@ -8,7 +8,11 @@ import '@/assets/css/common.less';
 
 import router from './router';
 
+import ReactProxy from '@/components/react-proxy.vue';
+
 Vue.use(ElementUI);
+
+Vue.component('ReactProxy', ReactProxy);
 
 new Vue({
   el: '#app',

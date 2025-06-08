@@ -22,8 +22,9 @@
             <div
               class="header__menu-title"
               :class="{ active: menu.path.startsWith(activeMenu) }"
+              v-if="menu.meta.isShow"
             >
-              {{ menu.name }}
+              {{ menu.meta.title }}
             </div>
           </div>
         </div>
@@ -51,9 +52,14 @@
   </div>
 </template>
 <script>
-import { PAGE_URL_OVERVIEW } from '@/constant/page-url-constants.js';
+import {
+  PAGE_URL_OVERVIEW,
+  PAGE_URL_AMIS_EDIT
+} from '@/constant/page-url-constants';
 import nestjsImg from '@/assets/img/nestjs.png';
 import j11BImg from '@/assets/img/J-11B.jpg';
+
+import { routes as visibleMenuList } from '@/router';
 export default {
   data() {
     return {
@@ -61,12 +67,7 @@ export default {
       j11BImg,
       PAGE_URL_OVERVIEW,
       activeMenu: '',
-      visibleMenuList: [
-        {
-          name: '概览',
-          path: PAGE_URL_OVERVIEW
-        }
-      ]
+      visibleMenuList
     };
   },
   watch: {

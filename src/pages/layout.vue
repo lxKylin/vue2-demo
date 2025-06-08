@@ -3,7 +3,9 @@
     <el-header height="46px">
       <Header />
     </el-header>
-    <el-main>Main</el-main>
+    <el-main>
+      <router-view></router-view>
+    </el-main>
   </el-container>
 </template>
 
