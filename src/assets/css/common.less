@@ -1,0 +1,538 @@
+/* stylelint-disable */
+:root {
+  // 白色
+  --color-white: #ffffff;
+  // 黑色
+  --color-black: #000;
+  // 粉色
+  --color-pink: #e65cad;
+  // 紫色
+  --color-purple: #6d85e1;
+  --color-puple-light-5: #787e98;
+  --color-puple-light-9: #f0f3ff;
+  // 主题色
+  --color-primary: #409eff;
+  --color-primary-light-3: #79bbff;
+  --color-primary-light-5: #a0cfff;
+  --color-primary-light-7: #c5e1ff;
+  --color-primary-light-8: #d8ebff;
+  --color-primary-light-9: #ebf5ff;
+  --color-primary-dark-2: #337ecc;
+  // 成功色
+  --color-success: #67c23a;
+  --color-success-light-3: #94d475;
+  --color-success-light-5: #b3e09c;
+  --color-success-light-7: #d1ecc3;
+  --color-success-light-8: #e0f2d7;
+  --color-success-light-9: #eff8eb;
+  --color-success-dark-2: #529b2e;
+  // 警告色
+  --color-warning: #e6a23c;
+  --color-warning-light-3: #edbd76;
+  --color-warning-light-5: #f2d09d;
+  --color-warning-light-7: #f7e3c4;
+  --color-warning-light-8: #faecc8;
+  --color-warning-light-9: #fcf5eb;
+  --color-warning-dark-2: #b88130;
+  // 错误色
+  --color-danger: #f56c6c;
+  --color-danger-light-3: #f89898;
+  --color-danger-light-5: #fab5b5;
+  --color-danger-light-7: #fcd2d2;
+  --color-danger-light-8: #fde1e1;
+  --color-danger-light-9: #fef0f0;
+  --color-danger-dark-2: #c45656;
+  // 信息色
+  --color-info: #909399;
+  --color-info-light-3: #b1b3b7;
+  --color-info-light-5: #c7c9cc;
+  --color-info-light-7: #dddede;
+  --color-info-light-8: #e8e9ea;
+  --color-info-light-9: #f3f4f5;
+  --color-info-dark-2: #73757a;
+  // 文字色
+  --text-color-dark: #151631;
+  --text-color-primary: #303133;
+  --text-color-regular: #606266;
+  --text-color-secondary: #909399;
+  --text-color-placeholder: #a8abb2;
+  --text-color-disabled: #c0c4cc;
+  // 边框色
+  --border-color: #dcdfe6;
+  --border-color-light: #e4e7ed;
+  --border-color-lighter: #ebeef5;
+  --border-color-extra-light: #f2f6fc;
+  --border-color-dark: #d4d7de;
+  --border-color-darker: #cdd0d6;
+  // 背景色
+  --bg-color: #ffffff;
+  --bg-color-header: #242424;
+  --bg-color-header-hover: #2f2f2f;
+  --bg-color-page: #f2f3f5;
+  --bg-color-blue-deep: #031244;
+  --bg-color-overlay: #ffffff;
+  --bg-color-overlay-dark: rgba(0, 0, 0, 0.4);
+  // 填充色
+  --fill-color: #f0f2f5;
+  --fill-color-light: #f5f7fa;
+  --fill-color-lighter: #fafafa;
+  --fill-color-extra-light: #fafcff;
+  --fill-color-dark: #ebedf0;
+  --fill-color-darker: #e6e8eb;
+  --fill-color-blank: #ffffff;
+
+  // 阴影色
+  --box-shadow-border: 0 0 6px 0 rgba(8, 61, 101, 0.15);
+  --box-shadow-drawer-footer: 0 -1px 4px 1px rgba(0, 0, 0, 0.14);
+  --box-shadow-page-footer: 2px 0 4px 0 rgba(208, 208, 208, 0.5);
+  --box-shadow-menu: 0 2px 4px 0 rgba(208, 208, 208, 0.5);
+  --box-shadow-side-menu: 0 2px 8px 0 rgba(0, 0, 0, 0.06);
+}
+.theme-black {
+  // 主题色
+  --color-primary: #409eff;
+  --color-primary-light-3: #79bbff;
+  --color-primary-light-5: #a0cfff;
+  --color-primary-light-7: #c5e1ff;
+  --color-primary-light-8: #d8ebff;
+  --color-primary-light-9: #ebf5ff;
+  --color-primary-dark-2: #337ecc;
+
+  --bg-color-header: #242424;
+  --bg-color-header-hover: #2f2f2f;
+}
+.theme-red {
+  /* 主题色（柔和的橙色） */
+  --color-primary: #ff9933; /* 浅橙色（HSL: hsl(35, 90%, 40%)） */
+  --color-primary-light-3: #ffbe76; /* 更柔和的浅橙 */
+  --color-primary-light-5: #ffd7a8; /* 中等浅橙 */
+  --color-primary-light-7: #ffe5d4; /* 接近白色的浅橙 */
+  --color-primary-light-8: #fff2f2; /* 几乎白色带微红 */
+  --color-primary-light-9: #fffef3; /* 最浅的米白色 */
+  --color-primary-dark-2: #e6731e; /* 略深的橙红色（降低饱和度） */
+
+  /* 背景色（柔和的粉红色） */
+  --bg-color-header: #ff6b6b; /* 浅粉红（HSL: hsl(0, 60%, 60%)） */
+  --bg-color-header-hover: #ff8c8c; /* 悬浮时更浅的粉红 */
+}
+.theme-green {
+  /* 主题色（黄色） */
+  --color-primary: #ffd700; /* 金属黄（保持不变） */
+  --color-primary-light-3: #ffe58f;
+  --color-primary-light-5: #fff0b2;
+  --color-primary-light-7: #fff8d7;
+  --color-primary-light-8: #ffffe0;
+  --color-primary-light-9: #fffee0;
+  --color-primary-dark-2: #ffb400;
+
+  /* 调暗后的菜单背景（深黄绿色） */
+  --bg-color-header: #8dc73f; /* 深黄绿色（HSL: hsl(80, 50%, 40%)） */
+  --bg-color-header-hover: #9acd32; /* 悬浮时的稍暗黄绿色（HSL: hsl(80, 50%, 50%)） */
+}
+/* stylelint-enable */
+
+::-webkit-scrollbar {
+  height: 8px;
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--color-info-light-8);
+  border-radius: 3px;
+}
+
+#app {
+  scrollbar-color: var(--color-info-light-8);
+  scrollbar-width: thin;
+}
+
+html,
+body {
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+  height: 100%;
+  margin: 0;
+}
+body {
+  overflow-y: hidden;
+}
+
+.width(@i) when(@i <= 50) {
+  .pt@{i} {
+    padding-top: ~'@{i}px' !important;
+  }
+  .pr@{i} {
+    padding-right: ~'@{i}px' !important;
+  }
+  .pb@{i} {
+    padding-bottom: ~'@{i}px' !important;
+  }
+  .pl@{i} {
+    padding-left: ~'@{i}px' !important;
+  }
+  .p@{i} {
+    padding: ~'@{i}px' !important;
+  }
+  .mt@{i} {
+    margin-top: ~'@{i}px' !important;
+  }
+  .mr@{i} {
+    margin-right: ~'@{i}px' !important;
+  }
+  .mb@{i} {
+    margin-bottom: ~'@{i}px' !important;
+  }
+  .ml@{i} {
+    margin-left: ~'@{i}px' !important;
+  }
+  .m@{i} {
+    margin: ~'@{i}px' !important;
+  }
+  .width((@i + 5));
+}
+
+.width(5);
+
+// 折叠文字溢出隐藏
+.text-hidden {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.action-link {
+  color: @theme-color;
+  cursor: pointer;
+  + .action-link {
+    margin-left: 10px;
+  }
+}
+
+.text-underline {
+  text-decoration: underline;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+.align-items-center {
+  align-items: center;
+}
+.align-items-start {
+  align-items: flex-start;
+}
+
+.flex-end {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.flex-align-items-center {
+  display: flex;
+  align-items: center;
+}
+
+// flex布局垂直居中
+.flex-align-center {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+// align
+.align-center {
+  text-align: center;
+}
+
+.align-left {
+  text-align: left !important;
+}
+
+.align-right {
+  text-align: right !important;
+}
+
+.space-around {
+  justify-content: space-around;
+}
+
+.flex-auto {
+  flex: auto;
+}
+
+.flex-none {
+  flex: none;
+}
+
+.hidden {
+  display: none !important;
+}
+
+// 解析配置表单
+.setting-config-form {
+  .confirm-popper .el-button {
+    width: 76px;
+    min-width: 76px;
+  }
+  .action-delete {
+    color: @text-regular-color;
+    cursor: pointer;
+  }
+  &__empty {
+    margin-top: 20px;
+    color: @text-tip-color;
+  }
+  &__item {
+    display: flex;
+    align-items: flex-start;
+    + .setting-config-form__item {
+      margin-top: 20px;
+    }
+  }
+  &__label {
+    flex: none;
+    margin-top: 7px;
+    font-size: 14px;
+    margin-right: 10px;
+    color: @text-regular-color;
+  }
+  &__content {
+    flex: auto;
+    .el-select {
+      width: 100%;
+    }
+  }
+  &__ipseg {
+    display: flex;
+    align-items: center;
+    + .origin-ip__config__ipseg {
+      margin-top: 10px;
+    }
+  }
+  &__separator {
+    margin: 0 20px;
+  }
+}
+
+// 矩形等级标签
+.rectangle-tag-style(@background,@font-color) {
+  width: fit-content;
+  height: 20px;
+  padding: 0 5px;
+  color: @font-color;
+  flex-shrink: 0;
+  font-size: 12px;
+  line-height: 20px;
+  text-align: center;
+  border-radius: 10px;
+  margin-right: 10px;
+  background: @background;
+}
+
+.rectangle-tag {
+  &--high {
+    .rectangle-tag-style(@high-level-color-bg,@high-level-color-font);
+  }
+  &--mid {
+    .rectangle-tag-style(@mid-level-color-bg,@mid-level-color-font);
+  }
+  &--low {
+    .rectangle-tag-style(@low-level-color-bg,@low-level-color-font);
+  }
+  &--non {
+    .rectangle-tag-style(@non-level-color-bg,@non-level-color-font);
+  }
+  &--other {
+    .rectangle-tag-style(@other-level-color-bg,@other-level-color-font);
+  }
+}
+
+// 矩形数字
+.rectangle-num-tag-style(@background,@font-color) {
+  width: fit-content;
+  height: 18px;
+  padding: 0 10px;
+  color: @font-color;
+  flex-shrink: 0;
+  font-size: 12px;
+  line-height: 18px;
+  text-align: center;
+  border-radius: 10px;
+  margin-right: 10px;
+  background: @background;
+  border: 1px solid transparent;
+  font-weight: 600;
+  transition: all 0.3s;
+  cursor: pointer;
+  &:hover {
+    border: 1px solid @font-color;
+  }
+}
+
+.rectangle-num-tag {
+  &--high {
+    .rectangle-num-tag-style(@high-level-color-num-bg,@high-level-color-num);
+  }
+  &--mid {
+    .rectangle-num-tag-style(@mid-level-color-num-bg,@mid-level-color-num);
+  }
+  &--low {
+    .rectangle-num-tag-style(@low-level-color-num-bg,@low-level-color-num);
+  }
+}
+
+// 大屏前置黄点标题
+.yellow-title {
+  font-weight: 600;
+  font-size: 24px;
+  color: @white-color;
+  line-height: 28px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  &::before {
+    content: ' ';
+    display: inline-block;
+    width: 5px;
+    height: 5px;
+    margin-right: 10px;
+    background-color: @orange-color;
+    border-radius: 50%;
+    vertical-align: middle;
+  }
+}
+
+// 大屏前置黄点普通标题
+.yellow-circle-title {
+  font-weight: 600;
+  &::before {
+    content: ' ';
+    display: inline-block;
+    width: 5px;
+    height: 5px;
+    margin-right: 10px;
+    background-color: @orange-color;
+    border-radius: 50%;
+    vertical-align: middle;
+  }
+}
+
+.blue-title {
+  font-weight: 600;
+  line-height: 28px;
+  margin-bottom: 20px;
+  &::before {
+    content: ' ';
+    display: inline-block;
+    width: 5px;
+    height: 5px;
+    margin-right: 10px;
+    background-color: @theme-color;
+    border-radius: 50%;
+    vertical-align: middle;
+  }
+}
+
+// 必填项
+.star::before {
+  content: '*';
+  color: @red-color;
+  margin-right: 4px;
+}
+
+// 等级icon
+& .level-icon {
+  &--1 {
+    color: @low-level-color-num;
+  }
+  &--2 {
+    color: @mid-level-color-num;
+  }
+  &--3 {
+    color: @high-level-color-num;
+  }
+}
+
+.full-width {
+  width: 100% !important;
+}
+
+.display-inline {
+  display: inline !important;
+}
+
+// 溯源任务状态
+.trace-task-dot {
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  margin-right: 5px;
+  border-radius: 8px;
+  &.wait {
+    background: @text-regular-color;
+  }
+  &.running {
+    background: @orange-color;
+  }
+  &.finish {
+    background: @green-color;
+  }
+  &.error {
+    background: @red-color;
+  }
+  &.cancel {
+    background: @theme-color;
+  }
+  &.terminated {
+    background: @pink-color;
+  }
+}
+
+.table-popover {
+  max-width: 506px;
+  max-height: 338px;
+  overflow: auto;
+}
+
+.pointer {
+  cursor: pointer;
+}
+.width_full {
+  width: 100%;
+}
+.flex_middle {
+  display: flex;
+  align-items: center;
+}
+.flex_ju_middle {
+  display: flex;
+  justify-content: center;
+}
+.flex_all {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.account-resolve-config-drawer {
+  .el-drawer__body {
+    overflow: hidden;
+    padding: 0 !important;
+  }
+}
+
+// 样例中只允许自定义的高亮
+.sample-container .monaco-editor .view-line .unexpected-closing-bracket,
+.weakness-test .monaco-editor .view-line .unexpected-closing-bracket {
+  color: #303133;
+}
