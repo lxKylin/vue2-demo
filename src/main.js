@@ -8,10 +8,12 @@ import '@/assets/css/common.less';
 import router from './router';
 
 import ReactProxy from '@/components/react-proxy.vue';
+import QzTips from '@/components/qz-tips.vue';
 
 Vue.use(ElementUI);
 
 Vue.component('ReactProxy', ReactProxy);
+Vue.component('QzTips', QzTips);
 
 new Vue({
   el: '#app',
