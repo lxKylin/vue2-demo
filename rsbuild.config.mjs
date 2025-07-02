@@ -33,16 +33,13 @@ export default defineConfig({
   // 与构建产物有关的选项
   output: {
     // publicPath: '/', // rspack中的publicPath配置项
-    assetPrefix: '/vue2-demo', // publicPath与之效果一致
+    assetPrefix: '/', // publicPath与之效果一致
     /**
      * 浏览器兼容
      * usage: 注入的 polyfill 体积更小，适合对包体积有较高要求的项目使用
      * entry: 注入的 polyfill 较为全面，适合对兼容性要求较高的项目使用
      */
-    polyfill: 'entry',
-    distPath: {
-      root: 'vue2-demo'
-    }
+    polyfill: 'entry'
   },
   source: {
     // 指定入口文件
@@ -59,7 +56,12 @@ export default defineConfig({
     compress: true,
     host: 'localhost',
     open: true, //配置自动启动浏览器
-    proxy: {}
+    proxy: {
+      // history模式下的url会请求到服务器端，但是服务器端并没有这一个资源文件，就会返回404，所以需要配置这一项
+      historyApiFallback: {
+        index: '/index.html' //与output的publicPath
+      }
+    }
   },
   tools: {
     /**
