@@ -39,7 +39,10 @@ export default defineConfig({
      * usage: 注入的 polyfill 体积更小，适合对包体积有较高要求的项目使用
      * entry: 注入的 polyfill 较为全面，适合对兼容性要求较高的项目使用
      */
-    polyfill: 'entry'
+    polyfill: 'entry',
+    distPath: {
+      root: 'vue2-demo'
+    }
   },
   source: {
     // 指定入口文件
