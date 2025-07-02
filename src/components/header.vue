@@ -7,7 +7,7 @@
     <div class="header__wrapper">
       <div class="header__left flex-auto">
         <router-link
-          :to="{ name: PAGE_URL_OVERVIEW }"
+          :to="{ name: PAGE_URL_MONACO_DEMO }"
           class="flex-row align-items-center flex-none"
         >
           <img class="header__logo" :src="j11BImg" alt="logo" />
@@ -53,7 +53,7 @@
 </template>
 <script>
 import {
-  PAGE_URL_OVERVIEW,
+  PAGE_URL_MONACO_DEMO,
   PAGE_URL_AMIS_EDIT
 } from '@/constant/page-url-constants';
 import nestjsImg from '@/assets/img/nestjs.png';
@@ -65,7 +65,7 @@ export default {
     return {
       nestjsImg,
       j11BImg,
-      PAGE_URL_OVERVIEW,
+      PAGE_URL_MONACO_DEMO,
       activeMenu: '',
       visibleMenuList
     };

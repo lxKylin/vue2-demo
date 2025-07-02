@@ -13,6 +13,8 @@ function resolve(dir) {
   return path.resolve(__dirname, dir);
 }
 
+const fePort = 8088;
+
 export default defineConfig({
   plugins: [
     pluginVue2(),
@@ -47,6 +49,14 @@ export default defineConfig({
   },
   html: {
     template: './public/index.html'
+  },
+  // 与 Rsbuild 服务器有关的选项
+  server: {
+    port: fePort, // 端口号
+    compress: true,
+    host: 'localhost',
+    open: true, //配置自动启动浏览器
+    proxy: {}
   },
   tools: {
     /**

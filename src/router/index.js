@@ -1,6 +1,6 @@
 import Vue from 'vue';
 import Router from 'vue-router';
-import { PAGE_URL_OVERVIEW } from '@/constant/page-url-constants';
+import { PAGE_URL_MONACO_DEMO } from '@/constant/page-url-constants';
 
 import baseRoutes from './base-routes';
 
@@ -8,13 +8,13 @@ Vue.use(Router);
 
 export const routes = [
   {
-    path: PAGE_URL_OVERVIEW,
-    name: PAGE_URL_OVERVIEW,
+    path: PAGE_URL_MONACO_DEMO,
+    name: PAGE_URL_MONACO_DEMO,
     meta: {
-      title: '概览',
+      title: '编辑器',
       isShow: true
     },
-    component: () => import('@/pages/overview.vue')
+    component: () => import('@/pages/monaco-demo.vue')
   },
   ...baseRoutes
 ];
@@ -24,7 +24,7 @@ const router = new Router({
   routes: [
     {
       path: '/',
-      redirect: PAGE_URL_OVERVIEW
+      redirect: PAGE_URL_MONACO_DEMO
     },
     {
       path: '/layout',
