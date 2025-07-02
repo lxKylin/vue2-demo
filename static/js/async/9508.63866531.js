@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkvue2_amis=self.webpackChunkvue2_amis||[]).push([["9508"],{64096:function(u,t,e){e.r(t),e.d(t,{ButtonGroupRenderer:()=>l,default:()=>r.default});var n=e(9787),r=e(7719),a=e(47755),l=function(u){function t(){return null!==u&&u.apply(this,arguments)||this}return(0,n.ZT)(t,u),t=(0,n.gn)([(0,a.Thl)({type:"button-group"})],t)}(r.default)}}]);
