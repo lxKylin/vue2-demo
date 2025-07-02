@@ -1,0 +1,52 @@
+# action 的名称
+name: Deploy GitHub Pages
+
+# # 触发条件：在 push 到 main 分支后
+on:
+  push:
+    branches:
+      - main
+
+# 任务
+jobs:
+  # 任务id(可自定义)
+  build-and-deploy:
+    # 服务器环境：最新版 Ubuntu
+    runs-on: ubuntu-latest
+    # 步骤
+    steps:
+      # 拉取代码
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+
+      - name: Install pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 10
+          run_install: false
+
+      - name: Install Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: 'pnpm'
+
+      - name: Install dependencies
+        run: pnpm install
+
+      - name: Build
+        run: pnpm run build
+
+      # 部署到 GitHub Pages
+      - name: Deploy
+        # 使用别人写好的一个 action
+        uses: JamesIves/github-pages-deploy-action@releases/v4
+        with:
+          # 这里的 VUE2_DEMO_TOKEN 名字需要和下文中的相对应
+          token: ${{ secrets.VUE2_DEMO_TOKEN }}
+          # 打包后的文件部署到哪个分支上(自动生成)
+          branch: gh-pages
+          # 打包后的文件在哪里
+          folder: dist

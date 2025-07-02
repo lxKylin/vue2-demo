@@ -1,7 +1,7 @@
 # Vue2中的一些demo
 
-- [] 使用amis
-- [] monaco编辑器封装
+- [ ] 使用amis
+- [x] monaco编辑器封装
 
 ## Setup
 
