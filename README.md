@@ -3,6 +3,14 @@
 - [ ] 使用amis
 - [x] monaco编辑器封装
 
+## amis-demo
+
+![amis-editor](./src/assets/img/amis-editor.png)
+
+## monaco-editor-demo
+
+![monaco-editor](./src/assets/img/monaco-demo.png)]
+
 ## Setup
 
 Install the dependencies:
