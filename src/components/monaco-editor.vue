@@ -228,10 +228,29 @@ export default {
       this.updateEmptyState(value);
       this.$emit('input', value);
     });
+
+    // 添加编辑器容器的点击事件处理
+    this.handleEditorClick = () => {
+      if (!this.readOnly && this.editor) {
+        this.editor.focus();
+      }
+    };
+    this.$refs.editorContainer.addEventListener(
+      'click',
+      this.handleEditorClick
+    );
   },
   beforeDestroy() {
     if (this.editor) {
       this.editor.dispose();
+    }
+
+    // 移除事件监听器
+    if (this.$refs.editorContainer) {
+      this.$refs.editorContainer.removeEventListener(
+        'click',
+        this.handleEditorClick
+      );
     }
 
     // 清理全屏相关的事件和样式
@@ -292,6 +311,7 @@ export default {
     opacity: 0.6;
     transition: opacity 0.2s ease;
     white-space: pre-wrap;
+    pointer-events: none;
   }
 
   .editor-content {
