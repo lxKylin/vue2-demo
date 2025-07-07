@@ -33,7 +33,7 @@ export default defineConfig({
   // 与构建产物有关的选项
   output: {
     // publicPath: '/', // rspack中的publicPath配置项
-    assetPrefix: '/vue2-demo', // publicPath与之效果一致
+    assetPrefix: './', // publicPath与之效果一致
     /**
      * 浏览器兼容
      * usage: 注入的 polyfill 体积更小，适合对包体积有较高要求的项目使用
