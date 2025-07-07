@@ -19,7 +19,7 @@ export default [
       import(/* webpackChunkName:"amis-pre" */ '@/pages/amis/preview.vue'),
     meta: {
       title: 'AMIS预览',
-      isShow: false
+      isShow: true
     }
   }
 ];

@@ -11,6 +11,8 @@
 
 ![monaco-editor](./src/assets/img/monaco-demo.png)]
 
+![monaco-preview](./src//assets/img/amis-preview.png)
+
 ## Setup
 
 Install the dependencies:

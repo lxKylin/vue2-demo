@@ -7,7 +7,8 @@
 </template>
 <script>
 import ReportPreview from '@/components-react/lowcode/viewer.jsx';
-// import { getAmisConfig } from '@/service/role-service';
+import amisDemoData from '@/data/amis-demo.json';
+
 export default {
   props: ['code'],
   data() {
@@ -18,28 +19,11 @@ export default {
       showDom: false
     };
   },
-  // watch: {
-  //   $route: {
-  //     handler(val) {
-  //       this.showDom = false;
-  //       const acode = this.$route.query?.acode || this.code;
-  //       if (acode) {
-  //         getAmisConfig({ resourceCode: acode }).then((res) => {
-  //           this.schema = JSON.parse(res?.data[0]?.pageConfig || '{}');
-  //           this.showDom = true;
-  //         });
-  //       } else {
-  //         this.schema = localStorage.getItem('amisdata')
-  //           ? JSON.parse(localStorage.getItem('amisdata'))
-  //           : {};
-  //         this.showDom = true;
-  //       }
-  //     },
-  //     immediate: true,
-  //     deep: true,
-  //   },
-  // },
-  mounted() {}
+  mounted() {
+    this.schema = amisDemoData;
+    this.showDom = true;
+    console.log(this.schema);
+  }
 };
 </script>
 
