@@ -1,17 +1,18 @@
 # Vue2中的一些demo
 
-- [ ] 使用amis
+- [x] 使用amis
 - [x] monaco编辑器封装
 
 ## amis-demo
 
 ![amis-editor](./src/assets/img/amis-editor.png)
 
+![monaco-preview](./src//assets/img/amis-preview.png)
+
 ## monaco-editor-demo
 
-![monaco-editor](./src/assets/img/monaco-demo.png)]
+![monaco-editor](./src/assets/img/monaco-demo.png)
 
-![monaco-preview](./src//assets/img/amis-preview.png)
 
 ## Setup
 
